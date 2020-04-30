@@ -1,1 +1,26 @@
-For my own
+[custom]
+enable_rule_generator=true
+overwrite_original_rules=true
+
+custom_proxy_group=Proxy`select`.*
+custom_proxy_group=Instagram`select`.*
+custom_proxy_group=Apple Services`select`[]Proxy`[]DIRECT`.*
+custom_proxy_group=AD Block`select`[]REJECT`[]DIRECT
+custom_proxy_group=Stream Services`select`[]Proxy`.*
+custom_proxy_group=Netease Music`select`[]DIRECT`Netease
+custom_proxy_group=Domestic`select`[]DIRECT`.*
+
+
+surge_ruleset=AD Block,https://ruleset.dev/surge3_reject
+surge_ruleset=AD Block,https://ruleset.dev/surge3_reject-tinygif
+surge_ruleset=Netease Music,https://ruleset.dev/surge3_netease_music
+surge_ruleset=Stream Services,https://ruleset.dev/surge3_stream_services
+surge_ruleset=Proxy,https://ruleset.dev/surge3_global_plus
+surge_ruleset=Proxy,https://ruleset.dev/surge3_global
+surge_ruleset=Apple Services,https://ruleset.dev/surge3_apple_services
+surge_ruleset=Domestic,https://ruleset.dev/surge3_domestic
+surge_ruleset=Domestic,[]GEOIP,CN
+surge_ruleset=Proxy,[]FINAL,,dns-failed
+surge_ruleset=Instagram,https://raw.githubusercontent.com/yamasaki6666/sub/master/instagram
+  
+surge_rule_base=https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/rixcloud_surge_base.conf
