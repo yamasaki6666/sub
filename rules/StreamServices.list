@@ -328,7 +328,4 @@ USER-AGENT,YouTubeMusic*
 DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,showtime.com
 
-# >> Qobuz
-DOMAIN-SUFFIX,qobuz.com
-
 # --- End of Stream Service Section ---
